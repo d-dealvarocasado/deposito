@@ -2,9 +2,9 @@ package cuentas;
 public class Main {
 
     public static void main(String[] args) {
-        CCuenta miCuenta;
-        miCuenta = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        operativa_cuentas(miCuenta, 2300, 695);
+        CCuenta cuenta1;
+        cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        operativa_cuentas(cuenta1, 2300, 695);
     }
 
 	/**
