@@ -12,11 +12,20 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
     
-   
+   /**
+    * Constructor vacio de la cuenta.
+    */
     public CCuenta()
     {
     }
-
+    
+    /**
+     * Constructor de la cuenta con los parámetros.
+     * @param nom nombre propietario
+     * @param cue codigo cuenta
+     * @param sal saldo actual
+     * @param tipo tipo de interes.
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
