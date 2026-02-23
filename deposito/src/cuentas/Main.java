@@ -8,23 +8,23 @@ public class Main {
     }
 
 	/**
-	 * @param miCuenta
+	 * @param cuenta1
 	 * @param cantidadRetirar TODO
 	 * @param cantidadIngresar TODO
 	 */
-	private static void operativa_cuentas(CCuenta miCuenta, float cantidadRetirar, float cantidadIngresar) {
+	private static void operativa_cuentas(CCuenta cuenta1, float cantidadRetirar, float cantidadIngresar) {
 		double saldoActual;
-		saldoActual = miCuenta.estado();
+		saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
 
         try {
-            miCuenta.retirar(cantidadRetirar);
+            cuenta1.retirar(cantidadRetirar);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            miCuenta.ingresar(cantidadIngresar);
+            cuenta1.ingresar(cantidadIngresar);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
